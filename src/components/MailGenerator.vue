@@ -1,11 +1,12 @@
 <template>
   <div class="container-fluid">
-    <h1>Le générateur d'email</h1>
+    <h1>Le générateur de mails</h1>
     <div class="row">
       <div class="col-md">
         <div class="card">
           <div class="card-body">
             <h3 class="card-title">1 - A remplir</h3>
+            <small class="text-muted">Renseigner ci-dessous les coordonnées du recruteur à qui vous souhaitez envoyer un mail</small>
             <form>
               <div class="row mb-2">
                 <div class="col">
@@ -50,8 +51,14 @@
               <div class="row mb-2">
                 <div class="col-12">
                   <div class="p-2 mb-2 bg-info text-white">
-                    Vous pouvez utiliser les variables suivantes : <b>&#123;&#123;civilite&#125;&#125; &#123;&#123;prenom&#125;&#125; &#123;&#123;nom&#125;&#125; &#123;&#123;entreprise&#125;&#125; &#123;&#123;poste&#125;&#125;</b>.<br>
-                    Ex : Bonjour &#123;&#123;civilite&#125;&#125; &#123;&#123;nom&#125;&#125; > Bonjour Monsieur Dupont
+                    Vous pouvez utiliser les variables suivantes :
+                    <span class="badge bg-light text-dark mr-1">&#123;&#123;civilite&#125;&#125;</span>
+                    <span class="badge bg-light text-dark mr-1">&#123;&#123;prenom&#125;&#125;</span>
+                    <span class="badge bg-light text-dark mr-1">&#123;&#123;nom&#125;&#125;</span>
+                    <span class="badge bg-light text-dark mr-1">&#123;&#123;entreprise&#125;&#125;</span>
+                    <span class="badge bg-light text-dark mr-1">&#123;&#123;poste&#125;&#125;</span>.
+                    <br>
+                    Ex : Bonjour <span class="badge bg-light text-dark mr-1">&#123;&#123;civilite&#125;&#125;</span><span class="badge bg-light text-dark mr-1">&#123;&#123;nom&#125;&#125;</span> > Bonjour Monsieur Dupont
                   </div>
                 </div>
                 <div class="col-2">
@@ -127,5 +134,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.bg-info{
+  border-radius: 0.25rem;
+}
 </style>
