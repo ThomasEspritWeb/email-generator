@@ -1,14 +1,14 @@
 <template>
   <div class="container-fluid">
-    <h1>Le générateur de mails</h1>
+    <h3 class="mb-4">Le générateur de mails</h3>
     <div class="row">
-      <div class="col-md">
+      <div class="col-md-7">
         <div class="card">
+          <div class="card-header text-white"><b>1 - A remplir</b></div>
           <div class="card-body">
-            <h3 class="card-title">1 - A remplir</h3>
             <small class="text-muted">Renseigner ci-dessous les coordonnées du recruteur à qui vous souhaitez envoyer un mail</small>
-            <form>
-              <div class="row mb-2">
+            <form class="mt-4">
+              <div class="row mb-4">
                 <div class="col">
                   <label for="civilite" class="col-form-label">Civilité</label>
                 </div>
@@ -32,7 +32,7 @@
                   <input type="text" name="nom" class="form-control" placeholder="Ex: Dupont" v-model="nom">
                 </div>
               </div>
-              <div class="row mb-2">
+              <div class="row mb-4">
                 <div class="col-2">
                   <label for="entreprise" class="col-form-label">Entreprise</label>
                 </div>
@@ -40,7 +40,7 @@
                   <input type="text" name="entreprise" class="form-control" placeholder="Ex: Apple" v-model="entreprise">
                 </div>
               </div>
-              <div class="row mb-2">
+              <div class="row mb-4">
                 <div class="col-2">
                   <label for="poste" class="col-form-label">Poste</label>
                 </div>
@@ -48,8 +48,8 @@
                   <input type="text" name="poste" class="form-control" placeholder="Ex: Chargé de recrutement" v-model="poste">
                 </div>
               </div>
-              <div class="row mb-2">
-                <div class="col-12">
+              <div class="row mb-4">
+                <div class="col-12 mb-4">
                   <div class="p-2 mb-2 bg-info text-white">
                     Vous pouvez utiliser les variables suivantes :
                     <span class="badge bg-light text-dark mr-1">&#123;&#123;civilite&#125;&#125;</span>
@@ -78,14 +78,14 @@
       </div>
       <div class="col-md">
         <div class="card">
+          <div class="card-header text-white"><b>2 - Email à envoyer</b></div>
           <div class="card-body">
-            <h3 class="card-title">2 - Email à envoyer</h3>
             <div class="mb-2">
-              <p>Objet</p>
+              <label class="col-form-label">Objet</label>
               <input type="text" disabled class="form-control" :value="objetText">
             </div>
             <div class="mb-2">
-              <p>Corps du mail</p>
+              <label class="col-form-label">Corps du mail</label>
               <textarea rows="20" disabled class="form-control" v-model="contenuText"></textarea>
             </div>
 
@@ -136,5 +136,20 @@ export default {
 <style scoped>
 .bg-info{
   border-radius: 0.25rem;
+}
+
+.card{
+  border: none;
+}
+
+.card-header{
+  background-color: #6F7D95;
+}
+
+.col-form-label{
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #6F7D95;
 }
 </style>
