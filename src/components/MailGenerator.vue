@@ -50,7 +50,7 @@
               <div class="row mb-2">
                 <div class="col-12">
                   <div class="p-2 mb-2 bg-info text-white">
-                    Vous pouvez utiliser les variables suivantes : <b>&#123;&#123;civilite&#125;&#125; &#123;&#123;prenom&#125;&#125; &#123;&#123;nom&#125;&#125; &#123;&#123;entreprise&#125;&#125;</b>.<br>
+                    Vous pouvez utiliser les variables suivantes : <b>&#123;&#123;civilite&#125;&#125; &#123;&#123;prenom&#125;&#125; &#123;&#123;nom&#125;&#125; &#123;&#123;entreprise&#125;&#125; &#123;&#123;poste&#125;&#125;</b>.<br>
                     Ex : Bonjour &#123;&#123;civilite&#125;&#125; &#123;&#123;nom&#125;&#125; > Bonjour Monsieur Dupont
                   </div>
                 </div>
